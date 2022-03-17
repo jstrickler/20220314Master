@@ -1,1 +1,89 @@
 
+pat    "pat the dog"    "I wear spats"   "He is an expat"
+
+p.t    "carpet"  "pet samatary"   "spittoon"  "keep to the right"
+
+.      any character but \n
+[abc]  any one of a, b, c
+[^abc]  any one NOT of a, b, c
+
+p[aeiou]t
+p[^aeiou]t    "p t"  "p.t"  "p5t" "pmt"  "keep to the right"  "phat"
+
+[0123456789][0123456789][0123456789]-[0123456789][0123456789]-[0123456789][0123456789][0123456789][0123456789]
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+p[a-z0-9_]t
+
+tob(y|ey|ie)
+
+\d{3}-\d{2}-\d{4}
+
+\s [ \t\n\r\f\b]
+\d [0-9]
+\w [a-zA-Z0-9_]
+
+p\.t
+
+* {0,}
++ {1,}
+? {0,1}
+{x} {x,} {x,y}
+
+tobe?y    "toby" or "tobey"
+
+\s*\d+\s*
+
+"ny\s+life"
+
+"([0-9a-f]{2}):?([0-9a-f]{2}):?([0-9a-f]{2}):?([0-9a-f]{2}):?([0-9a-f]{2}):?([0-9a-f]{2})"
+
+"[0-9a-f]{2}:{5}[0-9a-f]{2}"
+
+^  $  \b
+
+^  beginning of string  (also beginning of line if re.M flag used)
+$  end of string (same with re.M)
+
+\b  beginning or end of word
+
+^\d+$  "1"  "123" "13039230382938923923131090193013"
+    NOT   ""  "abc"
+
+^\s*\d+\s*$    "   1    "    "    123"     "456    "
+
+
+"How much foot is in football when the game is afoot"
+
+"\bfoot\b"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

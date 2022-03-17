@@ -14,4 +14,6 @@ for i in range(10):
     print("randrange(1, 5):", random.randrange(1, 10))
     print("choice(fruit):", random.choice(fruits))
     print("sample(fruit, 3):", random.sample(fruits, 3))
-    print()
+    random.shuffle(fruits)
+    print("shuffle(fruits)", fruits)
+    print('-' * 60)

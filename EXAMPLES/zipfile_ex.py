@@ -12,7 +12,9 @@ rzip.extract('parrot.txt')  # <4>
 
 # creating a zip file
 wzip = ZipFile("example.zip", mode="w", compression=ZIP_DEFLATED)  # <5>
-for base in "parrot tyger knights alice poe_sonnet spam".split():
-    filename = os.path.join("../DATA", base + '.txt')
-    print("adding {} as {}".format(filename, base + '.txt'))
-    wzip.write(filename, base + '.txt')  # <6>
+for file_name in "parrot.txt tyger.txt knights.txt alice.txt poe_sonnet.txt spam.txt".split():
+    file_path = os.path.join("../DATA", file_name)
+    print("adding {}".format(file_path))
+    wzip.write(file_path, file_name)  # <6>
+
+

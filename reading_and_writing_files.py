@@ -41,7 +41,7 @@ target_word_count = 0
 target = 'x'
 output_file = f"{target}_words.txt"
 with open('DATA/words.txt') as words_in:
-    with open(output_file, 'w') as words_out:
+    with open(output_file, 'w') as words_out:  # save to x_words.txt on filesystem
         for word in words_in:
             total_word_count += 1
             if word[0] == target:    # if word.startswith('x')

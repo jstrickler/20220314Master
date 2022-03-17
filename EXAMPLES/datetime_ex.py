@@ -47,3 +47,17 @@ t3 = t2 - t1
 print("datetime(2016, 8, 24, 10, 4, 34):", t1)
 print("datetime(2018, 8, 24, 22, 8, 1):", t2)
 print("time diff (t2 - t1):", t3)
+
+
+jay_bd = date(2014, 8, 1)
+
+elapsed_time = today - jay_bd
+
+jay_years, jay_days = divmod(elapsed_time.days, 365)
+jay_months = jay_days // 30
+
+print(f"Jay is {jay_years} years and {jay_months} months old")
+
+print(datetime.utcnow())
+
+
