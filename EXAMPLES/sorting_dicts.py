@@ -2,6 +2,8 @@
 
 count_of = dict(red=5, green=18, blue=1, pink=0, grey=27, yellow=5)
 
+print(count_of.items())
+
 # sort by key
 for color, num in sorted(count_of.items()):  # <1>
     print(color, num)
